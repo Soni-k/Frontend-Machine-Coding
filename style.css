@@ -4,11 +4,13 @@
 	box-sizing: border-box;
 }
 .card-container{
-	width: 100%;
-	height: 100vh;
+	/* width: 100vw;
+	height: 100%; */
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	background-color: aqua;
+	flex-direction: column;
 }
 .heading{
 	text-align: center;
@@ -16,8 +18,8 @@
 .card{
 	/* width: 30%;
   height: 60%; */
-	width: 400px;
-	height: 100px;
+	width: 500px;
+	/* height: 100px; */
 	background-color: gainsboro;
 	border-radius: 10px;
 	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
@@ -25,6 +27,7 @@
 	grid-template-rows: 1fr;
 	grid-template-columns: 0.4fr 1fr;
 	padding: 10px;
+	margin: 10px 20px;
 	cursor: pointer;
 }
 .imgcard{
@@ -43,7 +46,8 @@
 }
 .row {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+	justify-content: space-around;
 }
 .name,
 .price {
